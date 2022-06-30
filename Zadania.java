@@ -419,10 +419,13 @@ public class Zadania {
     }
 
     public static void main(String[] args) {
-        System.out.println("Jaka silnie chcesz obliczyc?");
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        System.out.println(silnia(n));
+        int licznik=0;
+        for(int i=0;i<100;i++){
+            if(i%10%9==0)
+                licznik+=1;
+        }
+        System.out.println(licznik);
+
 
     }
 }
